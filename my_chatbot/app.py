@@ -1,27 +1,3 @@
-# from flask import Flask, request, render_template, jsonify
-# from chatbot.database import get_product_collection
-# from chatbot.chatbot_logic import chatbot_response, initialize_shopping_cart
-
-# app = Flask(__name__)
-
-# users = {}  # Initialize the users dictionary
-
-# @app.route("/", methods=["GET"])
-# def home():
-#     return render_template('index.html')  # Render the HTML page
-
-# @app.route("/chat", methods=["POST"])
-# def chat():
-#     user_message = request.json["message"]
-#     user_id = "default_user"  # You mentioned that no user ID is needed, so we set it to a default value
-#     product_collection = get_product_collection()
-#     response = chatbot_response(user_id, user_message, product_collection, users)
-#     return jsonify({"response": response})
-
-# if __name__ == "__main__":
-#     app.run(debug=True)
-
-
 
 from flask import Flask, request, render_template, jsonify
 from chatbot.chatbot_logic import chatbot_response, initialize_shopping_cart
